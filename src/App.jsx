@@ -8,15 +8,15 @@ import { IncidencesPage } from './components/assistant/incidences-page/Incidence
 function App() {
   return (
     <Router>
-      <div className="">
-        <h1>DocTheSolve</h1>
+      <div>
+        <h1 className="text-4xl">DocTheSolve</h1>
         {/* Menu de navegación */}
         <nav>
           <ul>
-            <li>
+            <li className="inline mx-2 text-gray-500">
               <Link to="/">Inicio</Link>
             </li>
-            <li>
+            <li className="inline mx-2 text-gray-500">
               <Link to="/incidences">Incidencias</Link>
             </li>
           </ul>
