@@ -37,7 +37,7 @@ const NewIncidencesItem = () => {
                 consectetur impedit explicabo, ex doloremque expedita quam ducimus provident facere temporibus nostrum.
                 Dolor, dolore perferendis!</p>
             </div>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-start">
               <button className="px-2 py-1 bg-gray-700 text-gray-100 rounded-lg">Ver reporte</button>
             </div>
           </div>
