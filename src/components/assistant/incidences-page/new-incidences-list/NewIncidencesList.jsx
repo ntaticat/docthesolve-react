@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fragment } from 'react/cjs/react.production.min';
 import NewIncidencesItem from './new-incidences-item/NewIncidencesItem';
 
 const NewIncidencesList = () => {
@@ -7,11 +8,11 @@ const NewIncidencesList = () => {
 
 
   return (
-    <div className="w-7/12">
+    <Fragment>
       {lista.map((item) => (
         <NewIncidencesItem key={item} />
       ))}
-    </div>
+    </Fragment>
   );
 };
 

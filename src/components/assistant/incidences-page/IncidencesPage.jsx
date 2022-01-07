@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import AssistantChat from '../assistant-chat/AssistantChat';
 import NewIncidencesList from './new-incidences-list/NewIncidencesList'
 
-export const IncidencesPage = () => {
+const IncidencesPage = () => {
   return (
     <div className="w-full h-full flex flex-wrap justify-center">
 
@@ -10,23 +11,16 @@ export const IncidencesPage = () => {
       </div>
 
       {/* <div className="w-3/12"></div> */}
-      <NewIncidencesList />
+      <div className="w-7/12">
+        <NewIncidencesList />
+      </div>
 
       {/* Chat */}
       <div className="w-3/12">
-        <div className="w-full border-2 border-solid border-gray-300">
-          <div className="w-full p-3">
-            <div className="w-full py-3 flex flex-wrap justify-between items-baseline">
-              <strong>Chat</strong>
-            </div>
-            <hr className="w-full border-b-2 border-solid border-gray-200" />
-          </div>
-
-          <div className="w-full p-3">
-            <p>Aquí estará un chat... De momento no está</p>
-          </div>
-        </div>
+        <AssistantChat />
       </div>
     </div>
   );
 };
+
+export default IncidencesPage;

@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const NewIncidencesItem = () => {
 
@@ -38,7 +39,7 @@ const NewIncidencesItem = () => {
                 Dolor, dolore perferendis!</p>
             </div>
             <div className="w-full flex justify-start">
-              <button className="px-2 py-1 bg-gray-700 text-gray-100 rounded-lg">Ver reporte</button>
+              <Link to="/incidences/1" className="px-2 py-1 bg-gray-700 text-gray-100 rounded-lg">Ver reporte</Link>
             </div>
           </div>
           <button className="w-full py-2 bg-gray-200" onClick={() => setVerMas(false)}>
