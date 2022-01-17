@@ -1,4 +1,5 @@
 import React from 'react';
+import Chat from '../../components/chat/Chat';
 
 const AssistantChat = () => {
   return (
@@ -11,7 +12,7 @@ const AssistantChat = () => {
       </div>
 
       <div className="w-full p-3">
-        <p>Aquí estará un chat... De momento no está</p>
+        <Chat />
       </div>
     </div>
   );
