@@ -9,15 +9,15 @@ const IncidencePage = () => {
   let soluciones = [1, 1, 1, 1, 1];
 
   return (
-    <div className="w-full h-full flex flex-wrap justify-center">
+    <div className="relative w-full h-auto flex flex-wrap justify-center">
 
       {/* Titulo */}
-      <div className="w-full text-center py-3">
+      <div className="w-full h-auto text-center py-3">
         <h1 className="text-2xl">Incidencia #{id} | Asistente Técnico</h1>
       </div>
 
       {/* Incidencia */}
-      <div className="w-7/12">
+      <div className="w-7/12 h-auto">
         <div className="w-full border-2 border-solid border-gray-300">
           {/* Nombre */}
           <div className="w-full p-3">
@@ -62,11 +62,11 @@ const IncidencePage = () => {
       </div>
 
       {/* Secundario */}
-      <div className="sticky top-0 w-3/12">
+      <div className="sticky top-0 w-3/12 h-screen">
         <AssistantChat />
-        <Link to="/incidences" onClick={() => { }}>
-          <div className="w-full py-2 bg-gray-200 flex justify-center">
-            <div className="">Regresar <i class="fas fa-arrow-left"></i></div>
+        <Link className='w-full py-2 bg-gray-200 flex justify-center' to="/incidences">
+          <div>
+            <div className="sticky w-full">Regresar <i class="fas fa-arrow-left"></i></div>
           </div>
         </Link>
       </div>

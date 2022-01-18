@@ -30,7 +30,7 @@ const Chat = () => {
 
       <div className="w-full flex flex-nowrap border-t-2 border-solid border-gray-200 py-2 px-2">
         <input className='w-full rounded-l-full px-2 py-1 border-2 border-solid border-gray-200 text-sm' type="text" placeholder='escribe aquí...' />
-        <button className='bg-gray-700 text-white text-sm px-2 py-1 rounded-r-full'>enviar</button>
+        <button className='bg-gray-700 text-white text-sm pl-2 pr-4 py-1 rounded-r-full'><i class="fas fa-paper-plane"></i></button>
       </div>
     </div>
   );

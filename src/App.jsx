@@ -19,7 +19,7 @@ function App() {
               <Link to="/">Inicio</Link>
             </li>
             <li className="inline mx-2 text-gray-500">
-              <Link to="/incidences">Incidencias</Link>
+              <Link to="/incidences">Tabla de Incidencias</Link>
             </li>
           </ul>
         </nav>
